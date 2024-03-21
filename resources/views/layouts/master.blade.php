@@ -17,7 +17,7 @@
             <a href="/about" class="mx-2">About</a>
             <a href="/services" class="mx-2">Services</a>
             <a href="/contact" class="mx-2">Contact</a>
-            <a href="" class="mx-2">Login</a>
+            <a href="/login" class="mx-2">Login</a>
         </div>
     </nav>
     @yield('content')

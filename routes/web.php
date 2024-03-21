@@ -1,23 +1,13 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/about',function(){
-    return view('about');
-});
-
-Route::get('/services',function(){
-    return view('services');
-});
-
-Route::get('/contact',function(){
-    return view('contact');
-});
+Route::get('/',[PagesController::class,'index']);
+Route::get('/about',[PagesController::class,'about']);
+Route::get('/services',[PagesController::class,'services']);
+Route::get('/contact',[PagesController::class,'contact']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
